@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #ff6b6b, #34ace0);
+    background: linear-gradient(to bottom, #0d32edd6, #cc8718e9);
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,20 +9,15 @@ body {
     min-height: 100vh;
 }
 
-.page {
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 20px;
-    padding: 20px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-    width: 90%;
-    max-width: 400px;
-    text-align: center;
-}
+
+
 
 h1 {
+    
     font-size: 28px;
-    color: #333;
+    color: #272522;
     margin-bottom: 20px;
+
 }
 
 ul {
@@ -47,13 +42,13 @@ input[type="text"] {
     padding: 8px;
     border: none;
     border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(232, 232, 232, 0.7);
     font-size: 16px;
 }
 
 button {
     padding: 8px 16px;
-    background-color: #ff6b6b;
+    background-color: #28a53d;
     color: white;
     border: none;
     border-radius: 4px;
@@ -62,7 +57,7 @@ button {
 }
 
 button.deleteButton {
-    background-color: #e74c3c;
+    background-color: #bd0d0d;
 }
 
 p {
@@ -76,7 +71,6 @@ p {
         border-radius: 10px;
     }
 }
-/* ... (keyframes and previous media query) ... */
 
 @keyframes fadeIn {
     from {

@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const taskInput = document.getElementById("taskInput");
     const addTaskButton = document.getElementById("addTaskButton");
     const taskList = document.getElementById("taskList");
+    const congratsEmoji = document.getElementById('congratsEmoji');
 
     addTaskButton.addEventListener("click", function () {
         const taskText = taskInput.value.trim();
@@ -16,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
             taskInput.value = "";
         }
     });
-
+    
     taskList.addEventListener("click", function (event) {
         if (event.target.classList.contains("deleteButton")) {
             const li = event.target.parentElement;
