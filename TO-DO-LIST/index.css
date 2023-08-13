@@ -1,8 +1,8 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #0d32edd6, #cc8718e9);
+    background: linear-gradient(to bottom, #edcf0dd6, #fd9c00);
     margin: 0;
-    padding: 0;
+    padding: 1px;
     display: flex;
     justify-content: center;
     align-items: center;
