@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    background-color: #bebab2;
+    font-family: Arial, sans-serif;
+    
+  }
+ 
+  form {
+    width: 50%;
+    height: 75%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 30px;
+    border: 3px solid #fa8703;
+    border-radius: 5px;
+    align-items: center;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="contact no."],
+  input[type="branch"],
+  input[type="image"],
+  input[type="password"]
+   {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #1a2fb6;
+    border-radius: 3px;
+  }
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2fb024;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  #output {
+    
+    margin-top: 20px;
+    width: 30%;
+    background-color: rgb(181, 178, 153);
+    border: 1px solid #fffcfc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+</style>
+<title>TCET-student form</title>
+</head>
+<body>
+    <header style="border: 5px solid #fa8703;">
+        <img style="height: 175px; width: 100%;" src="https://www.tcetmumbai.in/image/rndheader.jpg" alt="Header Image">
+      </header>
+  <form id="registrationForm" >
+   <marquee behavior="loop" direction="LEFT"><h2>STUDENT ENROLLMENT FROM</h2></marquee> 
+    <input type="text" id="fullName" placeholder="Full Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="Contact no." id="contact" placeholder="contact" required>
+    <input type="branch" id="branch" placeholder="branch" required>
+    <input type="password" id="password" placeholder="Password" required>
+    <button type="submit">enroll student</button>
+  </form>
+  <div id="output"></div>
+
+  <script>
+    const form = document.getElementById('registrationForm');
+    const output = document.getElementById('output');
+   
+
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+
+      const fullName = document.getElementById('fullName').value;
+      const email = document.getElementById('email').value;
+      const Contact = document.getElementById('contact').value;
+      const branch = document.getElementById('branch').value;
+      const password = document.getElementById('password').value;
+
+      const userData = `
+        <h2> --STUDENT ID CARD--</h2>
+        <p><strong>Full Name:</strong> ${fullName}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Contact no:</strong> ${Contact}</p>
+        <p><strong>branch:</strong> ${branch}</p>
+        <p><strong>Password:</strong> ${password}</p>
+      `;
+
+      
+      output.innerHTML = userData;
+      form.reset();
+    });
+  </script>
+</body>
+</html>
